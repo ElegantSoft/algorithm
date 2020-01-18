@@ -4,7 +4,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-class Recursive {
+export default class Recursive {
   public factorial(num: number): number {
     if (num === 1) return 1;
     return num * this.factorial(num - 1);
@@ -13,7 +13,7 @@ class Recursive {
   private async getInput(): Promise<any> {}
 
   public main = (): void => {
-    rl.question("Put a number: ", answer => {
+    rl.question("Put a number: ", (answer: number) => {
       console.log(this.factorial(answer));
       rl.close();
     });

@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^13.1.8"
+    "@types/node": "^13.1.8",
+    "@types/yargs": "^15.0.0",
+    "yargs": "^15.1.0"
   }
 }
