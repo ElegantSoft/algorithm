@@ -5,13 +5,6 @@ const argv = yargs.options({
 }).argv;
 
 export default class LinearSearch {
-  public factorial(num: number): number {
-    if (num === 1) return 1;
-    return num * this.factorial(num - 1);
-  }
-
-  // private async getInput(): Promise<any> {}
-
   public main = (): void => {
     const { n, u } = argv;
     if (n && u) {
